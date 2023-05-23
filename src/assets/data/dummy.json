@@ -1,156 +1,174 @@
 {
-    "siniestros": [
-        {
-            "SiniestroNro": "300000000006265",
-            "FechaOcurrencia": "15052023",
-            "Poliza": "3000000105420",
-            "Asegurado": "KENNY SANTIAGO ARIEL",
-            "Riesgo": "EWQ-710",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "300000000006264",
-            "FechaOcurrencia": "6032023",
-            "Poliza": "3000000030499",
-            "Asegurado": "OZCOIDI DARIO RICARDO",
-            "Riesgo": "CZR-06",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "300000000006263",
-            "FechaOcurrencia": "9052023",
-            "Poliza": "3000000085117",
-            "Asegurado": "LAUMAN MARCELO RICARDO",
-            "Riesgo": "PKE-702",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "300000000006257",
-            "FechaOcurrencia": "1042023",
-            "Poliza": "3000000085117",
-            "Asegurado": "LAUMAN MARCELO RICARDO",
-            "Riesgo": "PKE-702",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "300000000006254",
-            "FechaOcurrencia": "3052023",
-            "Poliza": "3000000090412",
-            "Asegurado": "GRADICHE MAURO EZEQUIEL",
-            "Riesgo": "LWW-731 (no muestra el detalle)",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "32949",
-            "FechaOcurrencia": "9052023",
-            "Poliza": "308210866/05",
-            "Asegurado": "FOSGT ORLANDO RAMON",
-            "Riesgo": "GXN-676 - TOYOTA - COROLLA 1.8 XEI L/08",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "32946",
-            "FechaOcurrencia": "8052023",
-            "Poliza": "308729062/03",
-            "Asegurado": "CARIGNANO FRANCESCO DANILO",
-            "Riesgo": "PDW-848 - RENAULT - SANDERO STEPWAY II 1.6 PRIVILEGE",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "32832",
-            "FechaOcurrencia": "18042023",
-            "Poliza": "308429189/00",
-            "Asegurado": "PEIRETTI FERNANDO ANTONIO",
-            "Riesgo": "OPA-217 - VOLKSWAGEN - UP! 5 PTAS HIGH",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "32943",
-            "FechaOcurrencia": "25042023",
-            "Poliza": "308571200/08",
-            "Asegurado": "FOSGT ORLANDO RAMON",
-            "Riesgo": "GXN-676 - TOYOTA - COROLLA 1.8 XEI L/08",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "32903",
-            "FechaOcurrencia": "14042023",
-            "Poliza": "308610148/07",
-            "Asegurado": "MARRAISO HERNAN EDUARDO",
-            "Riesgo": "GXJ-780 - PEUGEOT - 307 XS 2.0 5 P. HDI PREMIUM 110 HP",
-            "Rama": 3
-        },
-        {
-            "SiniestroNro": "2700000000000570",
-            "FechaOcurrencia": "18042023",
-            "Poliza": "27000000026345",
-            "Asegurado": "ALTAMIRANO SANTIAGO OMAR",
-            "Riesgo": "A052PIG",
-            "Rama": 27
-        },
-        {
-            "SiniestroNro": "1842",
-            "FechaOcurrencia": "18042023",
-            "Poliza": "2701212292/02",
-            "Asegurado": "AGUILERA ALDO GABRIEL",
-            "Riesgo": "A138XHS - KELLER - KN 110-8",
-            "Rama": 27
-        },
-        {
-            "SiniestroNro": "1400000000000020",
-            "FechaOcurrencia": "18042023",
-            "Poliza": "14000000044426",
-            "Asegurado": "ESPINDOLA SILVIA INES",
-            "Riesgo": "KIK-614",
-            "Rama": 14
-        },
-        {
-            "SiniestroNro": "116",
-            "FechaOcurrencia": "28032023",
-            "Poliza": "1403504753/08",
-            "Asegurado": "PONCE JUAN PABLO",
-            "Riesgo": "- (9999) ARG. Y P. LIMITROFES",
-            "Rama": "14"
-        },
-        {
-            "SiniestroNro": "2746",
-            "FechaOcurrencia": "11042023",
-            "Poliza": "1201086192/04",
-            "Asegurado": "VACCARO GERMAN HUGO",
-            "Riesgo": "JUNIN 80 - 2600 VENADO TUERTO - (2600) VENADO TUERTO",
-            "Rama": 12
-        },
-        {
-            "SiniestroNro": "2847",
-            "FechaOcurrencia": "17042023",
-            "Poliza": "400852638/10",
-            "Asegurado": "NUESTRA SENORA DE LA MISERICORDIA",
-            "Riesgo": "CUIL 27483264513 - LABORI VALENTINA",
-            "Rama": 4
-        },
-        {
-            "SiniestroNro": "217",
-            "FechaOcurrencia": "13042023",
-            "Poliza": "1600900965/03",
-            "Asegurado": "COMUNA DE TEODELINA",
-            "Riesgo": "TEODELINA - - 6009 TEODELINA - (6009) TEODELINA",
-            "Rama": 16
-        },
-        {
-            "SiniestroNro": "3",
-            "FechaOcurrencia": "22112023",
-            "Poliza": "1100000123/00",
-            "Asegurado": "SUCESORES DE JOSE ROBERTO AYCIRIEX DE AY",
-            "Riesgo": "- - PISO - M.- - 7150 AYACUCHO - (7150) AYACUCHO",
-            "Rama": "11"
-        },
-        {
-            "SiniestroNro": "300000000006266",
-            "FechaOcurrencia": "18052023",
-            "Poliza": "3000000110167",
-            "Asegurado": "CERESOLE OSCAR ALBERTO",
-            "Riesgo": "está vacío",
-            "Rama": 22
-        }
-    ]
+ "siniestros": [
+{
+ "NroSiniestro": "300000000006265",
+ "FechaOcurrencia": "15052023",
+ "NroPoliza": "3000000105420",
+ "Asegurado": "KENNY SANTIAGO ARIEL",
+ "Riesgo": "EWQ-710",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "300000000006264",
+ "FechaOcurrencia": "6032023",
+ "NroPoliza": "3000000030499",
+ "Asegurado": "OZCOIDI DARIO RICARDO",
+ "Riesgo": "CZR-06",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "300000000006263",
+ "FechaOcurrencia": "9052023",
+ "NroPoliza": "3000000085117",
+ "Asegurado": "LAUMAN MARCELO RICARDO",
+ "Riesgo": "PKE-702",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "300000000006257",
+ "FechaOcurrencia": "1042023",
+ "NroPoliza": "3000000085117",
+ "Asegurado": "LAUMAN MARCELO RICARDO",
+ "Riesgo": "PKE-702",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "300000000006254",
+ "FechaOcurrencia": "3052023",
+ "NroPoliza": "3000000090412",
+ "Asegurado": "GRADICHE MAURO EZEQUIEL",
+ "Riesgo": "LWW-731 (no muestra el detalle)",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "32949",
+ "FechaOcurrencia": "9052023",
+ "NroPoliza": "308210866/05",
+ "Asegurado": "FOSGT ORLANDO RAMON",
+ "Riesgo": "GXN-676 - TOYOTA - COROLLA 1.8 XEI L/08",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "32946",
+ "FechaOcurrencia": "8052023",
+ "NroPoliza": "308729062/03",
+ "Asegurado": "CARIGNANO FRANCESCO DANILO",
+ "Riesgo": "PDW-848 - RENAULT - SANDERO STEPWAY II 1.6 PRIVILEGE",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "32832",
+ "FechaOcurrencia": "18042023",
+ "NroPoliza": "308429189/00",
+ "Asegurado": "PEIRETTI FERNANDO ANTONIO",
+ "Riesgo": "OPA-217 - VOLKSWAGEN - UP! 5 PTAS HIGH",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "32943",
+ "FechaOcurrencia": "25042023",
+ "NroPoliza": "308571200/08",
+ "Asegurado": "FOSGT ORLANDO RAMON",
+ "Riesgo": "GXN-676 - TOYOTA - COROLLA 1.8 XEI L/08",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "32903",
+ "FechaOcurrencia": "14042023",
+ "NroPoliza": "308610148/07",
+ "Asegurado": "MARRAISO HERNAN EDUARDO",
+ "Riesgo": "GXJ-780 - PEUGEOT - 307 XS 2.0 5 P. HDI PREMIUM 110 HP",
+ "Rama": 3
+ },
+ {
+ "NroSiniestro": "2700000000000570",
+ "FechaOcurrencia": "18042023",
+ "NroPoliza": "27000000026345",
+ "Asegurado": "ALTAMIRANO SANTIAGO OMAR",
+ "Riesgo": "A052PIG",
+ "Rama": 27
+ },
+ {
+ "NroSiniestro": "1842",
+ "FechaOcurrencia": "18042023",
+ "NroPoliza": "2701212292/02",
+ "Asegurado": "AGUILERA ALDO GABRIEL",
+ "Riesgo": "A138XHS - KELLER - KN 110-8",
+ "Rama": 27
+ },
+ {
+ "NroSiniestro": "1400000000000020",
+ "FechaOcurrencia": "18042023",
+ "NroPoliza": "14000000044426",
+ "Asegurado": "ESPINDOLA SILVIA INES",
+ "Riesgo": "KIK-614",
+ "Rama": 14
+},
+ {
+ "NroSiniestro": "116",
+ "FechaOcurrencia": "28032023",
+ "NroPoliza": "1403504753/08",
+ "Asegurado": "PONCE JUAN PABLO",
+ "Riesgo": "- (9999) ARG. Y P. LIMITROFES",
+ "Rama": "14"
+},
+ {
+ "NroSiniestro": "2746",
+ "FechaOcurrencia": "11042023",
+ "NroPoliza": "1201086192/04",
+ "Asegurado": "VACCARO GERMAN HUGO",
+ "Riesgo": "JUNIN 80 - 2600 VENADO TUERTO - (2600) VENADO TUERTO",
+ "Rama": 12
+},
+ {
+ "NroSiniestro": "2847",
+ "FechaOcurrencia": "17042023",
+ "NroPoliza": "400852638/10",
+ "Asegurado": "NUESTRA SENORA DE LA MISERICORDIA",
+ "Riesgo": "CUIL 27483264513 - LABORI VALENTINA",
+ "Rama": 4
+},
+{
+ "NroSiniestro": "217",
+ "FechaOcurrencia": "13042023",
+ "NroPoliza": "1600900965/03",
+ "Asegurado": "COMUNA DE TEODELINA",
+ "Riesgo": "TEODELINA - - 6009 TEODELINA - (6009) TEODELINA",
+ "Rama": 16
+ },
+ {
+ "NroSiniestro": "3",
+ "FechaOcurrencia": "22112023",
+ "NroPoliza": "1100000123/00",
+ "Asegurado": "SUCESORES DE JOSE ROBERTO AYCIRIEX DE AY",
+ "Riesgo": "- - PISO - M.- - 7150 AYACUCHO - (7150) AYACUCHO",
+ "Rama": "11"
+ },
+ {
+ "NroSiniestro": "300000000006266",
+ "FechaOcurrencia": "18052023",
+ "NroPoliza": "3000000110167",
+ "Asegurado": "CERESOLE OSCAR ALBERTO",
+ "Riesgo": "está vacío",
+ "Rama": 22
+ }
+ ],
+ "rama": [
+    {
+        "nroRama": 1,
+        "Rama": "Acc. Pasajeros transp."
+    },
+    {
+        "nroRama": 2,
+        "Rama": "Acc. Personal"
+    },
+    {
+        "nroRama": 3,
+        "Rama": "Aeronavegación"
+    },
+    {
+        "nroRama": 4,
+        "Rama": "Automotores"
+    }
+ ]
 }

@@ -1,60 +1,57 @@
-import { Component, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatTableDataSource } from '@angular/material/table';
-import {animate, state, style, transition, trigger} from '@angular/animations';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Rama, Siniestro } from 'src/app/core/interfaces/siniestro.interface';
+import { SiniestrosService } from 'src/app/services/siniestros.service';
+
 
 @Component({
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  animations: [
-    trigger('detailExpand', [
-      state('collapsed', style({height: '0px', minHeight: '0'})),
-      state('expanded', style({height: '*'})),
-      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
-    ]),
-  ],
+
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  columnsToDisplayWithExpand = [...this.displayedColumns, 'expand'];
-  expandedElement!: PeriodicElement | null;
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  dataSiniestros: Siniestro[] = [];
+  ramasData: Rama[] = [];
+  displayedColumns = ['NroSiniestro', 'FechaOcurrencia', 'Asegurado', 'Riesgo', 'Rama'];
+  formData: FormGroup = this.fb.group({
+    rama: [0],
+    siniestro: [''],
+    poliza: [''],
+    riesgo: [''],
+    socio: [''],
+    nroReferencia: [''],
+  })
 
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+  constructor( private siniestrosService: SiniestrosService,
+               private fb: FormBuilder ) { }
+  
+  ngOnInit(): void {
+    this.getRamas();
+    this.getSiniestros();
+  }
+
+  getSiniestros() {
+    this.siniestrosService.getSiniestros()
+      .subscribe( (resp: Siniestro[]) => {
+        console.log(resp);
+        this.dataSiniestros = resp;
+      })
+  }
+
+  getRamas() {
+    this.siniestrosService.getRama()
+      .subscribe( (resp: Rama[]) => {
+        console.log(resp);
+        this.ramasData = resp;
+      })
+  }
+
+  searchData() {
+    console.log(this.formData.value)
   }
 }
 
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-}
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 11, name: 'Sodium', weight: 22.9897, symbol: 'Na'},
-  {position: 12, name: 'Magnesium', weight: 24.305, symbol: 'Mg'},
-  {position: 13, name: 'Aluminum', weight: 26.9815, symbol: 'Al'},
-  {position: 14, name: 'Silicon', weight: 28.0855, symbol: 'Si'},
-  {position: 15, name: 'Phosphorus', weight: 30.9738, symbol: 'P'},
-  {position: 16, name: 'Sulfur', weight: 32.065, symbol: 'S'},
-  {position: 17, name: 'Chlorine', weight: 35.453, symbol: 'Cl'},
-  {position: 18, name: 'Argon', weight: 39.948, symbol: 'Ar'},
-  {position: 19, name: 'Potassium', weight: 39.0983, symbol: 'K'},
-  {position: 20, name: 'Calcium', weight: 40.078, symbol: 'Ca'},
-];
 

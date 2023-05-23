@@ -1,1 +1,148 @@
-/* You can add global styles to this file, and also import other style files */
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$gestion-siniestros-pas-primary: mat.define-palette(mat.$indigo-palette);
+$gestion-siniestros-pas-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$gestion-siniestros-pas-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$gestion-siniestros-pas-theme: mat.define-light-theme((
+  color: (
+    primary: $gestion-siniestros-pas-primary,
+    accent: $gestion-siniestros-pas-accent,
+    warn: $gestion-siniestros-pas-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('./assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url('./assets/fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('./assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Titillium-Regular;
+    src: url('./assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+}
+
+@font-face {
+    font-family: Titillium-Light;
+    src: url('./assets/fonts/Titillium_Web/TitilliumWeb-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Titillium-Bold;
+    src: url('./assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Titillium-Regular;
+}
+
+html {
+    font-size: 100%; /* 100% = 16px */
+}
+
+body, html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+
+
+
+
+
+:root {
+	--cmp-color: #19284b;
+	--cmp-secondary-color: #84D6F7;
+	--cmp-tertiary-color: #7F1399;
+}
+
+
+
+
+.centered-element {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-label {
+	position: relative;
+	left: -12px;
+	display: inline-block;
+	padding: 6px 12px;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 3px 0 0 3px;
+}
+
+.btn-labeled {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
+
+.btn-cmp {
+	color: #fff;
+	background: var(--cmp-tertiary-color);
+	border-color: var(--cmp-tertiary-color);
+	border-radius: 25px;
+	font-weight: 700;
+	margin-left: 20px;
+	min-width: 75px;
+	min-height: 34px;
+	font-size: 14px;
+}
+
+.btn-cmp-2 {
+	border: 2px solid #f5f5f5;
+	color: #6f6f6f !important;
+	border-radius: 25px;
+	font-weight: 700;
+	background: #f5f5f5;
+	margin-right: 20px;
+	min-width: 75px;
+	min-height: 34px;
+	font-size: 14px;
+}
+
+@import './app/shared/directives/mat-table-responsive/mat-table-responsive.directive.css';

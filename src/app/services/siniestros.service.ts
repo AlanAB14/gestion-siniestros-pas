@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Rama, Siniestro } from '../core/interfaces/siniestro.interface';
+import { Rama, SiniestroRes } from '../core/interfaces/siniestro.interface';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -12,8 +12,8 @@ export class SiniestrosService {
 
   constructor( private http: HttpClient ) { }
 
-  getSiniestros(): Observable<Siniestro[]> {
-    return this.http.get<Siniestro[]>( `${ this._url }/siniestros` )
+  getSiniestros(): Observable<SiniestroRes[]> {
+    return this.http.get<SiniestroRes[]>( `${ this._url }/siniestros` )
   }
 
   getRama(): Observable<Rama[]> {

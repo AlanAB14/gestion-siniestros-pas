@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Rama, Siniestro } from 'src/app/core/interfaces/siniestro.interface';
+import { Rama, SiniestroRes } from 'src/app/core/interfaces/siniestro.interface';
 import { SiniestrosService } from 'src/app/services/siniestros.service';
 
 
@@ -11,7 +11,7 @@ import { SiniestrosService } from 'src/app/services/siniestros.service';
 })
 export class HomeComponent implements OnInit{
 
-  dataSiniestros: Siniestro[] = [];
+  dataSiniestros: SiniestroRes[] = [];
   ramasData: Rama[] = [];
   displayedColumns = ['NroSiniestro', 'FechaOcurrencia', 'Asegurado', 'Riesgo', 'Rama'];
   formData: FormGroup = this.fb.group({
@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit{
 
   getSiniestros() {
     this.siniestrosService.getSiniestros()
-      .subscribe( (resp: Siniestro[]) => {
+      .subscribe( (resp: SiniestroRes[]) => {
         console.log(resp);
         this.dataSiniestros = resp;
       })

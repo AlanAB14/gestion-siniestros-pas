@@ -3,7 +3,7 @@ import { AfterViewInit, Component, Input, ViewChild, OnInit } from '@angular/cor
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
-import { Siniestro } from 'src/app/core/interfaces/siniestro.interface';
+import { SiniestroRes } from 'src/app/core/interfaces/siniestro.interface';
 
 @Component({
   selector: 'app-table',
@@ -29,7 +29,7 @@ export class TableComponent implements AfterViewInit, OnInit{
     this.setTableDataSource(data);
   }
 
-  expandedElement!: Siniestro | null;
+  expandedElement!: SiniestroRes | null;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -48,7 +48,7 @@ export class TableComponent implements AfterViewInit, OnInit{
     this.dataSource.paginator = this.paginator;
   }
 
-  goToSiniestro( siniestro: Siniestro ) {
+  goToSiniestro( siniestro: SiniestroRes ) {
     console.log(siniestro)
     const nroSiniestro = siniestro ? siniestro.NroSiniestro : null;
     this.router.navigate(['/siniestro', { id: nroSiniestro }])

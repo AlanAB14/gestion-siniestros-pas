@@ -7,7 +7,7 @@
                 <select class="form-select"
                         formControlName="rama">
                     <option value="0">Todas</option>
-                    <option *ngFor="let rama of ramasData" [value]="rama.nroRama">{{ rama.Rama }}</option>
+                    <option *ngFor="let rama of ramasData" [value]="rama.idRama">{{ rama.rama }}</option>
                 </select>
             </div>
             <div class="filter-section__item m-b-1 col-lg-4 col-sm-6">
@@ -52,12 +52,12 @@
         </div>
     </form>
 
-    <div class="table-section">
+    <div class="table-section desktopView">
         <app-table [tableData]="dataSiniestros" [displayedColumns]="displayedColumns"></app-table>
     </div>
 
-    <div class="card-section">
-
+    <div class="card-section mobileView">
+        <app-card-siniestros [dataSiniestros]="dataSiniestros"></app-card-siniestros>
     </div>
 
 </div>

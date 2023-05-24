@@ -1,4 +1,4 @@
-export interface Siniestro {
+export interface SiniestroRes {
     NroSiniestro:    string;
     FechaOcurrencia: string;
     NroPoliza:          string;
@@ -8,6 +8,6 @@ export interface Siniestro {
 }
 
 export interface Rama {
-    nroRama: number,
-    Rama: string
+    idRama: number,
+    rama: string
 }

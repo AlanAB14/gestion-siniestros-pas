@@ -10,13 +10,15 @@ import { TableComponent } from './components/table/table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SiniestroComponent } from './pages/siniestro/siniestro.component';
+import { CardSiniestrosComponent } from './components/card-siniestros/card-siniestros.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TableComponent,
-    SiniestroComponent
+    SiniestroComponent,
+    CardSiniestrosComponent
   ],
   imports: [
     HttpClientModule,

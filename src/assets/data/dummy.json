@@ -155,20 +155,20 @@
  ],
  "rama": [
     {
-        "nroRama": 1,
-        "Rama": "Acc. Pasajeros transp."
+        "idRama": 1,
+        "rama": "Acc. Pasajeros transp."
     },
     {
-        "nroRama": 2,
-        "Rama": "Acc. Personal"
+        "idRama": 2,
+        "rama": "Acc. Personal"
     },
     {
-        "nroRama": 3,
-        "Rama": "Aeronavegación"
+        "idRama": 3,
+        "rama": "Aeronavegación"
     },
     {
-        "nroRama": 4,
-        "Rama": "Automotores"
+        "idRama": 4,
+        "rama": "Automotores"
     }
  ]
 }
